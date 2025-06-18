@@ -37,7 +37,7 @@
           <div class="overlay" @click="closeVideo"></div>
           <div class="video" :class="showSlide">
             <span class="icon-close" @click="closeVideo">×</span>
-            <video :src="require('@/assets/imgs/product/video.mp4')" muted autoplay controls="controls"></video>
+            <!-- <video :src="require('@/assets/imgs/product/video.mp4')" muted autoplay controls="controls"></video> -->
           </div>
         </div>
       </div>

@@ -37,7 +37,7 @@ module.exports = {
       }
     }
   },
-  publicPath: process.env.NODE_ENV === 'production' ? '/vue-demo/' : '/',
+  publicPath: './',
   // outputDir:'dist',
   // indexPath:'index2.html',
   // lintOnSave:false,
