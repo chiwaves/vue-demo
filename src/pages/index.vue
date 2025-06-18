@@ -9,7 +9,7 @@
                             <div class="children">
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
-                                        <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
+                                        <a href="javascript:;" @click="gotoProduct(sub)" target="_blank">
                                             <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
@@ -22,7 +22,7 @@
                             <div class="children">
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
-                                        <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
+                                        <a href="javascript:;" @click="gotoProduct(sub)" target="_blank">
                                             <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
@@ -35,7 +35,7 @@
                             <div class="children">
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
-                                        <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
+                                        <a href="javascript:;" @click="gotoProduct(sub)" target="_blank">
                                             <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
@@ -48,7 +48,7 @@
                             <div class="children">
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
-                                        <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
+                                        <a href="javascript:;" @click="gotoProduct(sub)" target="_blank">
                                             <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
@@ -61,7 +61,7 @@
                             <div class="children">
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
-                                        <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
+                                        <a href="javascript:;" @click="gotoProduct(sub)" target="_blank">
                                             <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
@@ -74,7 +74,7 @@
                             <div class="children">
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
-                                        <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
+                                        <a href="javascript:;" @click="gotoProduct(sub)" target="_blank">
                                             <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
@@ -87,7 +87,7 @@
                             <div class="children">
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
-                                        <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
+                                        <a href="javascript:;" @click="gotoProduct(sub)" target="_blank">
                                             <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
@@ -100,7 +100,7 @@
                             <div class="children">
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
-                                        <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
+                                        <a href="javascript:;" @click="gotoProduct(sub)" target="_blank">
                                             <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
@@ -113,7 +113,7 @@
                             <div class="children">
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
-                                        <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
+                                        <a href="javascript:;" @click="gotoProduct(sub)" target="_blank">
                                             <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
@@ -126,7 +126,7 @@
                             <div class="children">
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
-                                        <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
+                                        <a href="javascript:;" @click="gotoProduct(sub)" target="_blank">
                                             <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
@@ -138,7 +138,7 @@
                 </div>
                 <swiper :options="swiperOptions">
                     <swiper-slide v-for="(item, index) in slideList" :key="index">
-                        <a :href="'/#/product/' + item.id"><img :src=item.img alt="slider"></a>
+                        <a href="javascript:;" @click="gotoProduct(item)"><img :src=item.img alt="slider"></a>
                     </swiper-slide>
                     <div class="swiper-button-prev" slot="button-prev"></div>
                     <div class="swiper-button-next" slot="button-next"></div>
@@ -146,12 +146,12 @@
                 </swiper>
             </div>
             <div class="ads-box">
-              <a :href="'/#/product/' + item.id" v-for="(item, index) in adsList" :key="index" target="_blank">
+              <a href="javascript:;" @click="gotoProduct(item)" v-for="(item, index) in adsList" :key="index" target="_blank">
                 <img :src="item.img" alt="ads-image">
               </a>
             </div>
             <div class="banner">
-              <a href="/#/product/30" target="_blank">
+              <a href="javascript:;" @click="gotoProduct({id:30})" target="_blank">
                 <img :src="require('@/assets/imgs/banner-1.png')" alt="banner-image">
               </a>
             </div>
@@ -161,14 +161,14 @@
                 <h2>手机</h2>
                 <div class="wrapper">
                     <div class="banner-left">
-                        <a href="/#/product/35">
+                        <a href="javascript:;" @click="gotoProduct({id:30})">
                             <img :src="require('@/assets/imgs/mix-alpha.jpg')" alt="banner-image">
                         </a>
                     </div>
                     <ul class="list-box">
                         <li class="list-item" v-for="(item, index) in proList" :key="index">
                             <span :class="{'newest': item.id==38}" @click="showModal = true">新品</span>
-                            <a :href="'/#/product/' + item.id" target="_blank">
+                            <a href="javascript:;" @click="gotoProduct(item)" target="_blank">
                                 <div class="item-img">
                                     <img v-lazy="item.mainImage" alt="products">
                                 </div>
@@ -306,6 +306,10 @@
             },
             gotoCart(){
                 this.$router.push('/cart');
+            },
+            gotoProduct(sub) {
+                const routeUrl = this.$router.resolve({ path: `/product/${(sub || {}).id}` });
+                window.open(routeUrl.href, '_blank');
             }
         }
     }

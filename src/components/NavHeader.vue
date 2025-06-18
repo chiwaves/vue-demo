@@ -24,7 +24,7 @@
                     <a href="javascript:;" class="link" v-if="!username" @click="login">登录</a>
                     <a href="javascript:;" class="link" v-if="username">消息通知</a>
                     <a href="/#/orderList" class="link" v-if="username" target="_blank">我的订单</a>
-                    <a href="/#/cart" class="my-cart" target="_blank"><span class="icon-cart"></span>购物车 ({{cartCount}})</a>
+                    <a href="javascript:;" @click="goToCart" class="my-cart" target="_blank"><span class="icon-cart"></span>购物车 ({{cartCount}})</a>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
                         <div class="children">
                             <ul>
                                 <li class="product" v-for="(item, index) in xiaomiList" :key="index">
-                                    <a :href="'/#/product/' + item.id" target="_blank">
+                                    <a href="javascript:;" @click="gotoProduct(item.id)" target="_blank">
                                         <div class="pro-img">
                                             <img v-lazy="item.mainImage" :alt="item.subtitle">
                                         </div>
@@ -58,7 +58,7 @@
                         <div class="children">
                             <ul>
                                 <li class="product" v-for="(item, index) in redmiList" :key="index">
-                                    <a :href="'/#/product/' + item.id" target="_blank">
+                                    <a href="javascript:;" @click="gotoProduct(item.id)" target="_blank">
                                         <div class="pro-img">
                                             <img v-lazy="item.mainImage" :alt="item.subtitle">
                                         </div>
@@ -188,6 +188,14 @@ export default {
                     this.redmiList = res.list.slice(6, 12);
                 }
             })
+        },
+        goToCart() {
+            const routeUrl = this.$router.resolve({ path: '/cart' });
+            window.open(routeUrl.href, '_blank');
+        },
+        gotoProduct(id) {
+            const routeUrl = this.$router.resolve({ path: `/product/${id}` });
+            window.open(routeUrl.href, '_blank');
         }
     }
 }
