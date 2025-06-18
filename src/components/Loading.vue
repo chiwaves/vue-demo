@@ -1,12 +1,17 @@
 <template>
   <div class="loading">
-    <img src="/imgs/loading-svg/loading-bars.svg" alt="loading">
+    <img :src="loadingImage" alt="loading">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'loading'
+  name: 'loading',
+  data() {
+    return {
+      loadingImage: require('@/assets/imgs/loading-svg/loading-bars.svg')
+    };
+  }
 }
 </script>
 

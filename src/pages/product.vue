@@ -8,7 +8,7 @@
     <div class="content">
 			<div class="first">
 				<div class="intro">
-					<img src="/imgs/product/title-1.png" alt="bg-img">
+					<img :src="require('@/assets/imgs/product/title-1.png')" alt="bg-img">
 					<h4>{{product.subtitle}}</h4>
 					<div class="price">
 						<span class="num">{{product.price}}</span>
@@ -20,11 +20,11 @@
       <div class="item-bg-3"></div>
       <div class="item-swiper">
         <swiper :options="swiperOptions">
-          <swiper-slide><img src="/imgs/product/gallery-2.png" alt=""></swiper-slide>
-          <swiper-slide><img src="/imgs/product/gallery-3.png" alt=""></swiper-slide>
-          <swiper-slide><img src="/imgs/product/gallery-4.png" alt=""></swiper-slide>
-          <swiper-slide><img src="/imgs/product/gallery-5.jpg" alt=""></swiper-slide>
-          <swiper-slide><img src="/imgs/product/gallery-6.jpg" alt=""></swiper-slide>
+          <swiper-slide><img :src="require('@/assets/imgs/product/gallery-2.png')" alt=""></swiper-slide>
+          <swiper-slide><img :src="require('@/assets/imgs/product/gallery-3.png')" alt=""></swiper-slide>
+          <swiper-slide><img :src="require('@/assets/imgs/product/gallery-4.png')" alt=""></swiper-slide>
+          <swiper-slide><img :src="require('@/assets/imgs/product/gallery-5.jpg')" alt=""></swiper-slide>
+          <swiper-slide><img :src="require('@/assets/imgs/product/gallery-6.jpg')" alt=""></swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
         <h3>{{product.name}} AI变焦三摄拍摄</h3>
@@ -37,21 +37,21 @@
           <div class="overlay" @click="closeVideo"></div>
           <div class="video" :class="showSlide">
             <span class="icon-close" @click="closeVideo">×</span>
-            <video src="/imgs/product/video.mp4" muted autoplay controls="controls"></video>
+            <video :src="require('@/assets/imgs/product/video.mp4')" muted autoplay controls="controls"></video>
           </div>
         </div>
       </div>
       <div class="qr-code">
         <div class="container">
           <div class="qrcode-item">
-            <img src="imgs/product/qrcode-mimall.png" alt="qr-code">
+            <img :src="require('@/assets/imgs/product/qrcode-mimall.png')" alt="qr-code">
             <div class="text">
               <p class="title">扫码关注【<span>小米商城</span>】公众号</p>
               <p class="subtitle">回复“热爱”，抽送Redmi 10X！</p>
             </div>
           </div>
           <div class="qrcode-item">
-            <img src="imgs/product/qrcode-mifans.jpg" alt="qr-code">
+            <img :src="require('@/assets/imgs/product/qrcode-mifans.jpg')" alt="qr-code">
             <div class="text">
               <p class="title">扫码关注【<span>小米米粉之家</span>】公众号</p>
               <p class="subtitle">回复“真心想要”，抽送一部Redmi 10X！</p>
@@ -132,7 +132,7 @@
 		.content{
 			.first{
 				height: 917px;
-				background: url("/imgs/product/product-intro-1.jpg") 50% 0 no-repeat;
+				background: url("~@/assets/imgs/product/product-intro-1.jpg") 50% 0 no-repeat;
 				background-size: auto 100%;
         position: relative;
         transition-delay: .5s;
@@ -161,12 +161,12 @@
       }
       .item-bg-2{
         height: 480px;
-        background: url('/imgs/product/product-bg-2.png') no-repeat center;
+        background: url('~@/assets/imgs/product/product-bg-2.png') no-repeat center;
         background-size: 80%;
       }
       .item-bg-3{
         height: 638px;
-        background: url('/imgs/product/product-bg-3.png') no-repeat center;
+        background: url('~@/assets/imgs/product/product-bg-3.png') no-repeat center;
         background-size: cover;
       }
       .item-swiper{
@@ -204,7 +204,7 @@
           width: 1226px;
           height: 540px;
           margin: 0 auto;
-          background: url('/imgs/product/gallery-1.png') no-repeat;
+          background: url('~@/assets/imgs/product/gallery-1.png') no-repeat;
           background-size: cover;
           cursor: pointer;
         }

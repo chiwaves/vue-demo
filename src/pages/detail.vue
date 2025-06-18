@@ -5,10 +5,10 @@
       <div class="swiper-box">
         <template>
           <swiper :options="swiperOptions">
-            <swiper-slide><img src="/imgs/detail/phone-1.jpg" alt="slide-img"></swiper-slide>
-            <swiper-slide><img src="/imgs/detail/phone-2.jpg" alt="slide-img"></swiper-slide>
-            <swiper-slide><img src="/imgs/detail/phone-3.jpg" alt="slide-img"></swiper-slide>
-            <swiper-slide><img src="/imgs/detail/phone-4.jpg" alt="slide-img"></swiper-slide>
+            <swiper-slide><img :src="require('@/assets/imgs/detail/phone-1.jpg')" alt="slide-img"></swiper-slide>
+            <swiper-slide><img :src="require('@/assets/imgs/detail/phone-2.jpg')" alt="slide-img"></swiper-slide>
+            <swiper-slide><img :src="require('@/assets/imgs/detail/phone-3.jpg')" alt="slide-img"></swiper-slide>
+            <swiper-slide><img :src="require('@/assets/imgs/detail/phone-4.jpg')" alt="slide-img"></swiper-slide>
             <div class="swiper-button-prev" slot="button-prev"></div>
             <div class="swiper-button-next" slot="button-next"></div>
             <div class="swiper-pagination" slot="pagination"></div>
@@ -30,7 +30,7 @@
         <p class="price">{{product.price}} 元<span class="discount">{{product.price + 1000}} 元</span></p>
         <div class="line"></div>
         <div class="loca">
-          <span class="loca-icon"><img src="/imgs/detail/icon-loc.png" alt="icon"></span>
+          <span class="loca-icon"><img :src="require('@/assets/imgs/detail/icon-loc.png')" alt="icon"></span>
           <div class="loca-box">
             <span>上海</span><span>上海市</span><span>徐汇区</span><span>凌云路街道</span><span class="modify" @click="showModal = true">修改</span>
           </div>
@@ -73,7 +73,7 @@
       <div class="container">
         <h3>价格说明</h3>
         <div class="price-des">
-          <img src="/imgs/detail/item-price.jpeg" alt="price-info">
+          <img :src="require('@/assets/imgs/detail/item-price.jpeg')" alt="price-info">
         </div>
       </div>
     </div>

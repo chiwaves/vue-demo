@@ -385,7 +385,7 @@ export default {
             width: 30px;
             height: 30px;
             margin: 0 auto 8px;
-            background: url('/imgs/icon-add.png') $colorH no-repeat center;
+            background: url('~@/assets/imgs/icon-add.png') $colorH no-repeat center;
             background-size: 14px;
             transition: all .4s;
             border-radius: 50%;

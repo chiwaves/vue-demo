@@ -2,7 +2,7 @@
     <div class="login">
         <div class="login-header">
             <div class="container">
-                <a href="/#/index"><img src="/imgs/login-logo.png" alt="milogo"></a>
+                <a href="/#/index"><img :src="require('@/assets/imgs/login-logo.png')" alt="milogo"></a>
             </div>
         </div>
         <div class="wrapper">
@@ -109,7 +109,7 @@ export default {
         .wrapper{
             width: 100%;
             height: 588px;
-            background: url('/imgs/login-bg-1.jpg') no-repeat center;
+            background: url('~@/assets/imgs/login-bg-1.jpg') no-repeat center;
             .container{
                 display: flex;
                 flex-direction: row-reverse;

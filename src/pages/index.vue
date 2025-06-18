@@ -10,7 +10,7 @@
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
                                         <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
-                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'" alt="menu-image">
+                                            <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
                                     </li>
@@ -23,7 +23,7 @@
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
                                         <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
-                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'" alt="menu-image">
+                                            <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
                                     </li>
@@ -36,7 +36,7 @@
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
                                         <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
-                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'" alt="menu-image">
+                                            <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
                                     </li>
@@ -49,7 +49,7 @@
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
                                         <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
-                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'" alt="menu-image">
+                                            <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
                                     </li>
@@ -62,7 +62,7 @@
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
                                         <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
-                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'" alt="menu-image">
+                                            <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
                                     </li>
@@ -75,7 +75,7 @@
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
                                         <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
-                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'" alt="menu-image">
+                                            <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
                                     </li>
@@ -88,7 +88,7 @@
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
                                         <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
-                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'" alt="menu-image">
+                                            <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
                                     </li>
@@ -101,7 +101,7 @@
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
                                         <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
-                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'" alt="menu-image">
+                                            <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
                                     </li>
@@ -114,7 +114,7 @@
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
                                         <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
-                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'" alt="menu-image">
+                                            <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
                                     </li>
@@ -127,7 +127,7 @@
                                 <ul v-for="(item, i) in menuList" :key="i">
                                     <li v-for="(sub, j) in item" :key="j">
                                         <a :href="sub ? '/#/product/' + sub.id : ''" target="_blank">
-                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'" alt="menu-image">
+                                            <img :src="sub ? sub.img : require('@/assets/imgs/item-box-1.png')" alt="menu-image">
                                             <span>{{sub ? sub.name : '小米9'}}</span>
                                         </a>
                                     </li>
@@ -152,7 +152,7 @@
             </div>
             <div class="banner">
               <a href="/#/product/30" target="_blank">
-                <img src="/imgs/banner-1.png" alt="banner-image">
+                <img :src="require('@/assets/imgs/banner-1.png')" alt="banner-image">
               </a>
             </div>
         </div>
@@ -162,7 +162,7 @@
                 <div class="wrapper">
                     <div class="banner-left">
                         <a href="/#/product/35">
-                            <img src="/imgs/mix-alpha.jpg" alt="banner-image">
+                            <img :src="require('@/assets/imgs/mix-alpha.jpg')" alt="banner-image">
                         </a>
                     </div>
                     <ul class="list-box">
@@ -230,42 +230,42 @@
                 slideList:[
                     {
                         id:'42',
-                        img:'/imgs/slider/slide-1.jpg'
+                        img: require('@/assets/imgs/slider/slide-1.jpg')
                     },
                     {
                         id:'45',
-                        img:'/imgs/slider/slide-2.jpg'
+                        img: require('@/assets/imgs/slider/slide-2.jpg')
                     },
                     {
                         id:'46',
-                        img:'/imgs/slider/slide-3.jpg'
+                        img: require('@/assets/imgs/slider/slide-3.jpg')
                     },
                     {
                         id:'',
-                        img:'/imgs/slider/slide-4.jpg'
+                        img: require('@/assets/imgs/slider/slide-4.jpg')
                     },
                     {
                         id:'',
-                        img:'/imgs/slider/slide-5.jpg'
+                        img: require('@/assets/imgs/slider/slide-5.jpg')
                     }
                 ],
                 menuList:[
                     [
                         {
                             id:30,
-                            img:'/imgs/item-box-1.png',
+                            img: require('@/assets/imgs/item-box-1.png'),
                             name:'小米CC9',
                         },{
                             id:31,
-                            img:'/imgs/item-box-2.png',
+                            img: require('@/assets/imgs/item-box-2.png'),
                             name:'小米8青春版',
                         },{
                             id:32,
-                            img:'/imgs/item-box-3.jpg',
+                            img: require('@/assets/imgs/item-box-3.jpg'),
                             name:'Redmi K20 Pro',
                         },{
                             id:33,
-                            img:'/imgs/item-box-4.jpg',
+                            img: require('@/assets/imgs/item-box-4.jpg'),
                             name:'移动4G专区',
                         }
                     ],
@@ -274,16 +274,16 @@
                 adsList:[
                   {
                     id:33,
-                    img:'/imgs/ads/ads-1.png'
+                    img: require('@/assets/imgs/ads/ads-1.png')
                   },{
                     id:48,
-                    img:'/imgs/ads/ads-2.jpg'
+                    img: require('@/assets/imgs/ads/ads-2.jpg')
                   },{
                     id:45,
-                    img:'/imgs/ads/ads-3.png'
+                    img: require('@/assets/imgs/ads/ads-3.png')
                   },{
                     id:47,
-                    img:'/imgs/ads/ads-4.jpg'
+                    img: require('@/assets/imgs/ads/ads-4.jpg')
                   }
                 ],
                 proList:[],

@@ -108,11 +108,11 @@ export default {
                 {
                     name: '小米壁画电视 65英寸',
                     price: 6999,
-                    mainImage: '/imgs/nav-img/nav-3-1.jpg'
+                    mainImage: require('@/assets/imgs/nav-img/nav-3-1.jpg')
                 },{
                     name: '小米全面屏电视 E55A',
                     price: 1999,
-                    mainImage: '/imgs/nav-img/nav-3-2.jpg'
+                    mainImage: require('@/assets/imgs/nav-img/nav-3-2.jpg')
                 },{
                     name: "Redmi 智能电视 MAX 98''",
                     price: 19999,
@@ -120,15 +120,15 @@ export default {
                 },{
                     name: '小米电视4A 55英寸',
                     price: 1799,
-                    mainImage: '/imgs/nav-img/nav-3-4.jpg'
+                    mainImage: require('@/assets/imgs/nav-img/nav-3-4.jpg')
                 },{
                     name: '米电视4A 65英寸',
                     price: 2699,
-                    mainImage: '/imgs/nav-img/nav-3-5.jpg'
+                    mainImage: require('@/assets/imgs/nav-img/nav-3-5.jpg')
                 },{
                     name: '米电视4A 32英寸',
                     price: 699,
-                    mainImage: '/imgs/nav-img/nav-3-3.png'
+                    mainImage: require('@/assets/imgs/nav-img/nav-3-3.png')
                 }
             ],
             showCategory: false,

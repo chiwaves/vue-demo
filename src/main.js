@@ -44,7 +44,7 @@ axios.interceptors.response.use((response)=>{
 Vue.use(VueAxios, axios);
 Vue.use(VueCookie);
 Vue.use(VueLazyLoad, {
-  loading: 'imgs/loading-svg/loading-bubbles.svg'
+  loading: require('@/assets/imgs/loading-svg/loading-bubbles.svg')
 });
 Vue.use(Dropdown);
 Vue.use(DropdownMenu);

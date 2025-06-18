@@ -1,4 +1,13 @@
+const path = require('path');
+
 module.exports = {
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src')
+      }
+    }
+  },
   chainWebpack: config => {
     config.module
       .rule('images')
@@ -28,7 +37,7 @@ module.exports = {
       }
     }
   },
-  publicPath: process.env.NODE_ENV === 'production' ? '/vue-demo/' : '/',
+  publicPath:'./',
   // outputDir:'dist',
   // indexPath:'index2.html',
   // lintOnSave:false,

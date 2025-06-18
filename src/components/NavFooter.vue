@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="footer-logo">
-            <img src="/imgs/logo-footer.png" alt="logo">
+            <img :src="image" alt="logo">
             <p>小米商城</p>
         </div>
         <p class="footer-link">
@@ -27,7 +27,12 @@
 
 <script>
 export default {
-    name:'nav-footer'
+    name:'nav-footer',
+    data() {
+        return {
+            image: require('@/assets/imgs/loading-svg/loading-bars.svg')
+        };
+  }
 }
 </script>
 

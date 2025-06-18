@@ -8,7 +8,7 @@
 @mixin bgImg($w:0, $h:0, $url:'', $size:contain){
     width: $w;
     height: $h;
-    background: url('/imgs/' + $url) no-repeat center;
+    background: url('~@/assets/imgs/#{$url}') no-repeat center;
     background-size: $size;
 }
 @mixin position($pos:absolute, $top:0, $left:0, $w:100%, $h:100%){
@@ -24,6 +24,6 @@
     right: $right;
     width: $w;
     height: $h;
-    background: url('/imgs/' + $url) no-repeat center;
+    background: url('~@/assets/imgs/#{$url}') no-repeat center;
     background-size: contain;
 }

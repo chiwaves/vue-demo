@@ -1,6 +1,6 @@
 <template>
   <div class="alipay">
-    <img src="/imgs/loading-svg/loading-bars.svg" alt="loading">
+    <img :src="img" alt="loading">
     <div class="form" v-html="content"></div>
   </div>
 </template>
@@ -11,6 +11,7 @@ export default {
   data(){
     return{
       content: '',
+      img: require('@/assets/imgs/loading-svg/loading-bars.svg')
     }
   },
   mounted(){
